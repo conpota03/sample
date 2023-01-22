@@ -1,0 +1,8 @@
+    .calculator {
+        border: 5px dashed #aaa;
+        background-color: #eee;
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        display: inline-block;
+    }

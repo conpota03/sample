@@ -4,37 +4,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="こんぽた。">
-    <meta name="description" content="TRPGのシナリオレビューサイトです。いろんな人たちのセッションの履歴のかけらを残していく場所になります">
-    <link rel="icon" href="images/dice-icon.png" type="image/x-icon">
+    <meta name="description" content="ジャバサンプル">
     <!--タイトル-->
-    <title>TRPGシナリオレビューサイト「接歴」</title>
+    <title>ジャバサンプル</title>
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link href="http://fonts.googleapis.com/css?Noto+Serif+Japanese" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <!--ボディー-->
 
 <body>
-    <!--ヘッダー-->
-    <header>
-        <nav>
-            <div>
-            </div>
-        </nav>
-    </header>
-    <!--フッターー-->
-    <main>
-
-
-    </main>
-
-    <input type="text" name="シナリオ名： " placeholder="シナリオ名">
-    <!-- footer -->
-    <footer>
-        <p></p>
-    </footer>
-    <!--JavaScript-->
-    <script src=" scripts/02about-pbl.js "></script>
+    <div class="calculator">
+        <input id="t1" type="text " size="10 " />+
+        <input id="t2" type="text " size="10 " />
+        <input type="button" value="=" onClick="calculator()" />
+        <input id="t3" type="text " size="10 " />
+    </div>
+    <br>
+    <br>
+    <div class="calculator">
+        <input id="result" type="text" size="20" />
+        <br>
+        <input type="button" value=" 7 " onClick="disp(7)" />
+        <input type="button" value=" 8 " onClick="disp(8)" />
+        <input type="button" value=" 9 " onClick="disp(9)" />
+        <input type="button" value="Cls" onClick="cls()">
+        <br />
+        <input type="button" value=" 4 " onClick="disp(4)" />
+        <input type="button" value=" 5 " onClick="disp(5)" />
+        <input type="button" value=" 6 " onClick="disp(6)" />
+        <input type="button" value="*" onClick="disp('*')" />
+        <input type="button" value="/" onClick="disp('/')" />
+        <br>
+        <input type="button" value=" 1 " onClick="disp(1)" />
+        <input type="button" value=" 2 " onClick="disp(2)" />
+        <input type="button" value=" 3 " onClick="disp(3)" />
+        <input type="button" value="+" onClick="disp('+')" />
+        <input type="button" value="-" onClick="disp('-')" />
+        <br>
+        <input type="button" value=" 0 " onClick="disp(0)" />
+        <input type="button" value="計算" onClick="enter()" />
+    </div>
+    <script src="scripts/JavaScript.js">
+    </script>
 </body>
 
 </html>
